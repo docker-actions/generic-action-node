@@ -1,4 +1,4 @@
-FROM actions/npm:3.5.2-1 as build
+FROM actions/npm:3.5.2-2 as build
 
 ARG REQUIRED_PACKAGES=""
 
@@ -11,7 +11,7 @@ RUN bash -c 'mkdir -p ${ROOTFS}/usr/local/bin' \
 COPY entrypoint.sh ${ROOTFS}/usr/local/bin/entrypoint.sh
 RUN chmod +x ${ROOTFS}/usr/local/bin/entrypoint.sh
 
-FROM actions/node:8.10.0-3
+FROM actions/node:8.10.0-4
 LABEL maintainer = "ilja+docker@bobkevic.com"
 
 ARG ROOTFS=/build/rootfs
