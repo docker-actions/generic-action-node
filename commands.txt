@@ -1,1 +1,1 @@
-aglio=2.3.0:aglio@2.3.0
+export IMAGE_NAME=aglio; export IMAGE_TAG=2.3.0; export REQUIRED_PACKAGES="aglio@2.3.0"
