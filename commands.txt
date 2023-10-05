@@ -1,1 +1,3 @@
-export IMAGE_NAME=aglio; export IMAGE_TAG=2.3.0; export REQUIRED_PACKAGES="aglio@2.3.0"
+export IMAGE_NAME=aglio;   export IMAGE_TAG=2.3.0;  export REQUIRED_PACKAGES="aglio@2.3.0"
+export IMAGE_NAME=typedoc; export IMAGE_TAG=0.25.1; export REQUIRED_PACKAGES="typedoc@0.25.1 typescript"
+

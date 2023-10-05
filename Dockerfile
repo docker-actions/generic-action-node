@@ -14,7 +14,7 @@ RUN mkdir -p ${ROOTFS}/{usr/local/lib,usr/local/bin} \
 COPY ${IMAGE_NAME}.entrypoint.sh ${ROOTFS}/usr/local/bin/entrypoint.sh
 RUN chmod +x ${ROOTFS}/usr/local/bin/entrypoint.sh
 
-FROM actions/node:10.19.0-focal2
+FROM actions/node:20.8.0-jammy1
 LABEL maintainer = "ilja+docker@bobkevic.com"
 
 ARG ROOTFS=/build/rootfs
